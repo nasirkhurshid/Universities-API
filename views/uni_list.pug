@@ -1,0 +1,15 @@
+html
+    head
+        title Universities in #{country}
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet")
+        style(type="text/css").
+           li:hover {
+                background-color: #c1d0e8
+            }
+            
+    body(class='p-3')
+        h1(class='text-center m-2' style='font-variant:small-caps') #{total} Universities in #{country}
+        ol(class='list-group list-group-numbered p-3')
+            each uni in universities
+                li(class='list-group-item')
+                    strong #{uni.name}                

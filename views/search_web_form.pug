@@ -1,0 +1,15 @@
+html
+    head
+        title Search Web Address
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet")
+
+    body(class='p-3 text-center')
+        div(class='m-5')
+            h1 Search University's Web Page Address
+            form(action= 'search_web', method= 'GET')
+                label(class="form-label fs-4 text-left" for="uname") University Name:
+                div(class='d-flex justify-content-center')
+                    div(class='d-flex justify-content-center w-50')
+                        input(type="text" class="form-control mb-2" placeholder="Enter university name" name='uname')
+                button(type='submit' class='btn btn-primary w-50') SEARCH WEB ADDRESS
+
